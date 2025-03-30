@@ -80,8 +80,8 @@
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="flex flex-col justify-center items-center h-screen bg-gray-900 text-white">
-    <header class="mb-8">
+<body class="flex flex-col justify-start items-center h-screen bg-gray-900 text-white">
+    <header class="mb-4 mt-4">
         <h1 class="text-4xl font-bold text-center">Traffic Lights</h1>
     </header>
     <div class="flex space-x-10 mb-10">
@@ -97,15 +97,15 @@
         </div>
     </div>
     <div class="w-full max-w-md space-y-6">
-        <div>
+        <div class="mx-4">
             <label for="go-slider" class="block text-sm font-medium">Go Duration: <span id="go-value">5s</span></label>
             <input id="go-slider" type="range" min="1" max="10" value="5" class="w-full">
         </div>
-        <div>
+        <div class="mx-4">
             <label for="yield-slider" class="block text-sm font-medium">Yield Duration: <span id="yield-value">1s</span></label>
             <input id="yield-slider" type="range" min="1" max="10" value="1" class="w-full">
         </div>
-        <div>
+        <div class="mx-4">
             <label for="stop-slider" class="block text-sm font-medium">Stop Duration: <span id="stop-value">2s</span></label>
             <input id="stop-slider" type="range" min="1" max="10" value="2" class="w-full">
         </div>
